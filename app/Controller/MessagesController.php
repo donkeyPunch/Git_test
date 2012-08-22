@@ -16,6 +16,7 @@ class MessagesController extends AppController {
 	public function index() {
 		$this->Message->recursive = 0;
 		$this->set('messages', $this->paginate());
+		echo 'hi';
 	}
 
 /**
